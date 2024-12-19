@@ -1,0 +1,2085 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), #000), url("https://demo.templatesjungle.com/kaira/images/single-image-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    /* box-shadow: 0 0 16px rgba(0, 0, 0, 0.15); */
+    border-bottom: 1px solid #ffffff58;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.n-logo h1{
+    color: #000;
+}
+
+.n-nav ul li a{
+    color: #000;
+}
+
+.n-icon i{
+    color: #000;
+}
+.logo {
+    margin-left: 20px;
+}
+
+.logo h1 {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav ul li a {
+    font-family: "Raleway", sans-serif;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+}
+
+.nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav ul li a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 99;
+}
+
+.icon i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+}
+
+.search-bar {
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 8px 30px;
+    font-size: 12px;
+    outline: none;
+}
+
+.right-bar {
+    position: fixed;
+    top: 0;
+    right: -700px;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.right-bar.active {
+    right: 0;
+}
+
+.right-bar h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.right-bar p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.close-icon {
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.cart {
+    width: 30%;
+    background-color: #0000004f;
+    height: calc(100vh - 81px);
+    position: absolute;
+    top: 80px;
+    right: 0px;
+}
+
+.center {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-text i {
+    font-size: 70px;
+}
+
+.center-text p {
+    font-size: 15px;
+    color: #000;
+    padding-bottom: 30px;
+}
+
+.center-text a {
+    padding: 10px 50px;
+    background-color: #000;
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.banner {
+    width: 100%;
+    height: calc(100vh - 81px);
+}
+
+.banner1 {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text {
+    width: 70%;
+    color: #fff;
+}
+
+.banner-text h6 {
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.banner-text h1 {
+    font-size: 65px;
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.banner-text p {
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+.banner-text a {
+    padding: 12px 50px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.new-arrival {
+    width: 100%;
+    height: 90vh;
+}
+
+.new-arrival h2 {
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line1 {
+    width: 15%;
+    height: 2px;
+    background-color: #555;
+    margin-bottom: 10px;
+}
+
+.new-arr-card {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.new-arr-card1 {
+    width: 21%;
+    height: 80%;
+    background-image: url("https://images.unsplash.com/photo-1722363497275-9e28fa9752b8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWFuJTIwaW4lMjBob29kaWV8ZW58MHx8MHx8fDA%3D");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.new-arr-card2 {
+    width: 21%;
+    height: 80%;
+    background-image: url("https://shop.mango.com/assets/rcs/pics/static/T5/fotos/S/57027752_30.jpg?imwidth=2048&imdensity=1&ts=1695112368778");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+
+.new-arr-card3 {
+    width: 21%;
+    height: 80%;
+    background-image: url("https://shop.mango.com/assets/rcs/pics/static/T7/fotos/S/77017117_99.jpg?imwidth=2048&imdensity=1&ts=1722004468135");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: center;
+}
+
+.new-arr-card4 {
+    width: 21%;
+    height: 80%;
+    background-image: url("https://hustlenholla.com.pk/cdn/shop/files/J_TFallSummer-1302.jpg?v=1724746679&width=1946");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 14%;
+    background-color: #dadada;
+    gap: 2px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.btn a {
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #000;
+    border: 1px solid gray;
+    text-decoration: none;
+}
+
+.new-arr-card1:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn a:hover {
+    border: 1px solid #000;
+    transition: 0.2s ease-in;
+}
+
+.new-arr-card2:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card3:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card4:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.heart i {
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.heart i.active {
+    color: #a81114;
+}
+
+
+.new-banner {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-banner1 {
+    width: 90%;
+    height: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), #000), url("https://images.unsplash.com/photo-1629965572970-790d2671760e?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-banner2 {
+    text-align: center;
+}
+
+.new-banner2 h1 {
+    font-size: 50px;
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+.new-banner2 p {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+.our-collection {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.collection-text h2 {
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.new-banner2 a {
+    padding: 12px 50px;
+    background-color: #000;
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+
+.collection-card1 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://www.fashionbeans.com/wp-content/uploads/2019/01/tailoringtrendlb88.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.collection-card2 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://media.istockphoto.com/id/2150873004/video/man-in-blue-jacket-and-white-pants-posing-for-camera-in-studio.jpg?s=640x640&k=20&c=RhcsuCzOCfL9v2IG0pMRuyAfYOEtdt9Fwih7OPY1yro=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+
+.collection-card3 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://img.freepik.com/premium-photo/beautiful-fashion-model-wearing-long-pants-white-shirt-grey-background_157173-899.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: center;
+}
+
+.collection-card4 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://st3.depositphotos.com/6299324/15242/i/450/depositphotos_152421632-stock-photo-beautiful-woman-glamor-model-fashion.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.collection-card1:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection-card2:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection-card3:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection-card4:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection-card5 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://st2.depositphotos.com/6299324/11828/i/450/depositphotos_118287910-stock-photo-high-fashion-look-glamor-closeup.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.collection-card6 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://c.cdnmp.net/115282748/p/l/1/peserico-men-s-sweatshirt~2001.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+
+.collection-card7 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://www.psychobunny.ca/cdn/shop/products/B6J741X1CO-BLK_1_b70e1b96-a889-47c7-a896-dfff4adfb575.jpg?v=1697740734");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: center;
+}
+
+.collection-card8 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://www.psychobunny.ca/cdn/shop/files/B6N338E200-BLK_1.webp?v=1729567042");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.collection-card5:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection-card6:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection-card7:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection-card8:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection-card9 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://cdn.dsmcdn.com/ty1553/product/media/images/ty1552/prod/QC/20240917/12/ab66138b-36b0-327c-8d82-656ba071faba/1_org_zoom.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.collection-card10 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://media.boohoo.com/i/boohoo/bmm26155_grey%20marl_xl/male-grey%20marl-man-active-oversized-sweatshirt/?w=900&qlt=default&fmt.jp2.qlt=70&fmt=auto&sm=fit");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+
+.collection-card11 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI211941209001_alternate10?$plpDeskRFAlt$");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: center;
+}
+
+.collection-card12 {
+    width: 20%;
+    height: 80%;
+    background-image: url("https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/17124352/2022/2/10/721a4add-af77-4853-a8db-7e9cc06115ba1644501783979Oversizedsweatshirt1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.collection-card9:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection-card10:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection-card11:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.collection-card12:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.see-more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.see-more-btn a {
+    padding: 12px 50px;
+    background-color: #000;
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.feature {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature1 {
+    width: 100%;
+    height: 98%;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.feature-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature-icon i {
+    font-size: 27px;
+    color: #333;
+}
+
+.feature-text h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+}
+
+.feature-text p {
+    font-size: 13px;
+    color: #555;
+}
+
+.email-subs {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.email-subs-text h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 15px;
+}
+
+.email-subs-text p {
+    font-size: 14px;
+    color: #333;
+    padding-bottom: 5px;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.email-form input[type="email"] {
+    padding-left: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 100%;
+    height: 44px;
+    max-width: 300px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.email-form button {
+    padding: 14px 30px;
+    border: none;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: -30px;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.feature-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
+    margin-top: 20%;
+}
+
+.new-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
+    margin-top: 50%;
+}
+
+.t-shirt-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
+    margin-top: 20%;
+}
+
+.men-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
+    margin-top: 20%;
+}
+
+.acce-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
+    margin-top: 20%;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
+    background-color: #000;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px 20px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #dadada;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-section p:hover {
+    color: #333;
+}
+
+/* Social Media Icons */
+.social-icons i {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #fff;
+}
+
+.social-icons i:hover {
+    color: #ccc;
+}
+
+
+/* Copyright Section */
+.copyright {
+    background-color: #fff;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #000;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.right-content {
+    width: 100%;
+    height: calc(100vh - 81px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-content-side {
+    width: 15%;
+    height: calc(100vh - 81px);
+}
+
+ul {
+    list-style: none;
+    margin: 10px 5px;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    margin: 1px 0px;
+}
+
+a.menu-item {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid gray;
+}
+
+a.menu-item.active {
+    background-color: #000;
+    color: #fff;
+}
+
+a.menu-item:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.left-contnet-side {
+    width: 85%;
+    height: 100vh;
+}
+
+.new-arrival-feature {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new {
+    height: 95%;
+}
+
+.new-arr-card13 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://shop.mango.com/assets/rcs/pics/static/T7/fotos/S/77047915_56.jpg?imwidth=2048&imdensity=1&ts=1729704858173");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.new-arr-card14 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://denims.pk/cdn/shop/files/Women_Olive_Green_Denim_Jacket_-_DENIMS_-5609332.jpg?v=1731810595&width=1200");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+
+.new-arr-card15 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://www.cernucci.com/cdn/shop/files/VG-FBYDE12CJM-M-LB-8.jpg?v=1726559915&width=800");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: center;
+}
+
+.new-arr-card16 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://www.gulahmedshop.com/media/catalog/product/l/i/light_blue_denim_women_jacket_224-210-035_6_.jpg?optimize=medium&fit=bounds&height=&width=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.new-arr-card13:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card14:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card15:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card16:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.featured {
+    margin-top: 15%;
+}
+
+.new-featured {
+    margin-top: 45%;
+}
+
+
+.new-arr-card17 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://img.ltwebstatic.com/images3_spmp/2024/05/26/23/17167309652e64601cdcda1b9456d1c4a03875aa9e_thumbnail_720x.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.new-arr-card18 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://huegen.pk/cdn/shop/files/Black_web.jpg?v=1718108935");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+
+.new-arr-card19 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://cdn.shopify.com/s/files/1/0613/6213/files/Platinum8mm_MainDetailView_PDP_540x.jpg?v=1698354825");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: center;
+}
+
+.new-arr-card20 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://salty.co.in/cdn/shop/files/MidnightCharismaChain_2.jpg?v=1688990079&width=1080");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+
+
+.new-arr-card21 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fbf%2F24%2Fbf24c8942e55353544a88fd4b9bfa91e7530e4c4.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_accessories_sunglasses%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/mobilemain]");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.new-arr-card22 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://razajewellers.pk/wp-content/uploads/2024/06/2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+
+.new-arr-card23 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://zeesy.pk/cdn/shop/collections/bangles-smal.webp?crop=center&height=600&v=1722002338&width=500");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: center;
+}
+
+.new-arr-card24 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://galaxybags.com.pk/cdn/shop/files/A_3_f6d75c45-25c0-4284-b1fc-d51ed33acdce.jpg?v=1704641321");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.new-arr-card25 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://www.stoneharbor.com.pk/cdn/shop/products/stone-harbor-women-t-shirt-light-green-s-10-women-s-unique-graphic-tee-shirt-33709635960885.png?v=1679724095");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.new-arr-card26 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://brandsego.com/cdn/shop/files/ada5b3e4-9aea-4f50-b3ee-4b843fc15b121609934627688-Roadster-Women-Tshirts-861609934626023-3_2000x.jpg?v=1710739154");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+
+.new-arr-card27 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://m.media-amazon.com/images/I/61qIdBrC1ZL._AC_UF894,1000_QL80_.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: center;
+}
+
+.new-arr-card28 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://m.media-amazon.com/images/I/71ZIscFlJXL._AC_UY1100_.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.new-arr-card25:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card26:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card27:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card28:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card29 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://img.tatacliq.com/images/i14/437Wx649H/MP000000019676247_437Wx649H_202310151850202.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.new-arr-card30 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://oyemonkey.com/wp-content/uploads/2024/07/black-model-wearing-tshirt-mockup-and-silver-chain-in-front-of-brown-screen-0274.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+
+.new-arr-card31 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://images.lululemon.com/is/image/lululemon/LW3FSXS_032493_1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: center;
+}
+
+.new-arr-card32 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://www.teez.in/cdn/shop/products/i-eat-less-sugar-women-black-1_large.jpg?v=1595908644");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.new-arr-card29:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card30:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card31:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card32:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card33 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://media.centrepointstores.com/i/centrepoint/8914695-HQ149774-SP24211223_01-2100.jpg?fmt=auto&$quality-standard$&sm=c&$prodimg-m-prt-pdp-2x$");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.new-arr-card34 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://edge.pk/cdn/shop/files/1_a0fc5096-722b-4edb-acce-161bcf6ea6c9.jpg?v=1709846728");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+
+.new-arr-card35 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/30145697/2024/7/6/e862567a-cebf-40bf-9e14-7c006aeda0cb1720268420645SuperBaggyJeans2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: center;
+}
+
+.new-arr-card36 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://www.jiomart.com/images/product/original/rvz3jdxgfm/anime-t-shirt-for-men-oversized-fit-jujutsu-kaisen-t-shirts-round-neck-gojo-satoru-tshirt-black-half-sleeves-pure-cotton-product-images-rvz3jdxgfm-2-202307270234.jpg?im=Resize=(500,630)");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.new-arr-card33:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card34:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card35:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card36:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card37 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://zellbury.com/cdn/shop/files/MBSS25001-Maroon_1.jpg?v=1734156754");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.new-arr-card38 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://blackberrys.com/cdn/shop/files/Textured-3-Pcs-Suit-In-Charcoal-Cocktail-LPLM1752G3PA23FL-image10.jpg?v=1703569981&width=2000");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+
+}
+
+.new-arr-card39 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://www.chaosofficial.co/cdn/shop/products/DSC01366small.jpg?v=1666787920");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    position: relative;
+    justify-content: center;
+}
+
+.new-arr-card40 {
+    width: 20%;
+    height: 95%;
+    background-image: url("https://charcoal.com.pk/cdn/shop/products/HIGH-NECK-SWEATER-NAVY-at-Charcoal-Clothing-437.jpg?v=1680070325&width=2048");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.new-arr-card33:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card34:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card35:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card36:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card37:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card38:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card39:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.new-arr-card40:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .header {
+        flex-direction: column;
+        height: 100px;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .logo h1 {
+        font-size: 15px;
+    }
+
+    .nav ul li a {
+        font-size: 10px;
+    }
+
+    .icon {
+        margin: 10px 0px;
+    }
+
+    .icon i {
+        font-size: 15px;
+    }
+
+    .main {
+        width: 100%;
+        height: 100vh ;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), #000), url("https://i.pinimg.com/736x/26/30/32/263032c478851016eba2fe8780694f33.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+    }
+
+    .banner1 {
+        width: 80%;
+    }
+
+    .banner-text {
+        width: 90%;
+        height: 50%;
+        color: #fff;
+    }
+
+    .banner-text h1 {
+        font-size: 35px;
+        color: #fff;
+    }
+
+    .banner-text p {
+        font-size: 12px;
+        color: #efefef;
+    }
+
+    .banner-text h6 {
+        font-size: 12px;
+    }
+
+    .banner-text a {
+        padding: 10px 30px;
+        font-size: 12px;
+        border: 1px solid #fff;
+    }
+
+    .new-arr-card {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 80vh;
+    }
+
+    .new-arr-card1,
+    .new-arr-card2,
+    .new-arr-card3,
+    .new-arr-card4 {
+        width: 42%;
+        height: 40%;
+    }
+
+    .heart {
+        top: 5px;
+    }
+
+    .heart i {
+        font-size: 12px;
+    }
+
+    .btn {
+        transform: translateY(30px);
+        width: 100%;
+    }
+
+    .btn a {
+        padding: 3px 5px;
+        font-size: 8px;
+    }
+
+    .new-arrival h2 {
+        font-size: 20px;
+        padding: 10px 0px;
+    }
+
+    .new-banner {
+        margin-top: 20%;
+        height: 35vh;
+    }
+
+    .new-banner1 {
+        height: 90%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), #000), url("https://i.pinimg.com/736x/6b/3b/f1/6b3bf17abdeaba8e9e760b300b46a64c.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .new-banner2 h1 {
+        font-size: 20px;
+    }
+
+    .new-banner2 p {
+        font-size: 12px;
+    }
+
+    .new-banner2 a {
+        padding: 8px 30px;
+    }
+
+    .collection-text h2 {
+        font-size: 20px;
+    }
+
+    .our-collection {
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    }
+
+    .collection-card1,
+    .collection-card2,
+    .collection-card3,
+    .collection-card4 {
+        width: 42%;
+        height: 45%;
+    }
+
+    .collection-card5,
+    .collection-card6,
+    .collection-card7,
+    .collection-card8 {
+        width: 42%;
+        height: 45%;
+    }
+
+    .collection-card9,
+    .collection-card10,
+    .collection-card11,
+    .collection-card12 {
+        width: 42%;
+        height: 45%;
+    }
+
+    .see-more-btn a {
+        font-size: 10px;
+        padding: 8px 30px;
+    }
+
+    .email-subs {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .email-subs-text h1 {
+        font-size: 25px;
+        padding: 0px;
+    }
+
+    .email-subs-text p {
+        font-size: 10px;
+    }
+
+    .email-form {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .email-form input[type="email"] {
+        width: 100%;
+        margin: 0px;
+        height: 35px;
+    }
+
+    .email-form button {
+        width: 87%;
+        margin: 0px;
+        padding: 11px 20px;
+    }
+
+    .feature {
+        height: auto;
+        padding: 1px 0px;
+    }
+
+    .feature1 {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .feature-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .feature-icon i {
+        font-size: 24px;
+    }
+
+    .feature-text h1 {
+        font-size: 18px;
+    }
+
+    .feature-text p {
+        font-size: 12px;
+    }
+
+    .right-content {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2%;
+        height: 100vh;
+    }
+
+    .right-content-side {
+        width: 100%;
+        height: 30%;
+        margin-top: 5%;
+    }
+
+    .left-contnet-side {
+        width: 100%;
+        margin-top: 20%;
+        height: 70%;
+    }
+
+    .feature-footer {
+        margin-top: 130%;
+    }
+
+    .new-arrival-feature {
+        width: 100%;
+        height: 60vh;
+        margin-bottom: 20px;
+    }
+
+    .new-arr-card {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .new-arr-card13,
+    .new-arr-card14,
+    .new-arr-card15,
+    .new-arr-card16 {
+        width: 42%;
+        height: 45%;
+    }
+
+    .new-footer {
+        margin-top: 270%;
+    }
+
+    .new-arr-card17,
+    .new-arr-card18,
+    .new-arr-card19,
+    .new-arr-card20 {
+        width: 42%;
+        height: 45%;
+    }
+
+    .new-arr-card21,
+    .new-arr-card22,
+    .new-arr-card23,
+    .new-arr-card24 {
+        width: 42%;
+        height: 45%;
+    }
+
+    .acce-footer {
+        margin-top: 130%;
+    }
+
+    .new-arr-card25,
+    .new-arr-card26,
+    .new-arr-card27,
+    .new-arr-card28 {
+        width: 42%;
+        height: 45%;
+    }
+
+    .new-arr-card29,
+    .new-arr-card30,
+    .new-arr-card31,
+    .new-arr-card32 {
+        width: 42%;
+        height: 45%;
+    }
+
+    .t-shirt-footer {
+        margin-top: 130%;
+    }
+
+    .new-arr-card33,
+    .new-arr-card34,
+    .new-arr-card35,
+    .new-arr-card36 {
+        width: 42%;
+        height: 45%;
+    }
+
+    .new-arr-card37,
+    .new-arr-card38,
+    .new-arr-card39,
+    .new-arr-card40 {
+        width: 42%;
+        height: 45%;
+    }
+
+    .men-footer {
+        margin-top: 130%;
+    }
+
+    .feature-card h1 {
+        font-size: 12px;
+    }
+
+    .feature-card i {
+        font-size: 15px;
+    }
+
+    .feature-card p {
+        font-size: 8px;
+    }
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Product Images Section */
+.product-images {
+    flex: 1 1 30%;
+    display: flex;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnails img {
+    width: 90px;
+    height: 23%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+/* Product Details Section */
+.product-details {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #222;
+}
+
+.ratings {
+    color: #f39d12;
+    font-size: 1.2rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.new-price {
+    color: #000;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.size-selector {
+    margin: 10px 0;
+}
+
+.size-selector label {
+    font-weight: bold;
+}
+
+.sizes {
+    display: flex;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.sizes button {
+    padding: 7px 12px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.sizes button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.add-to-cart {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    width: 35%;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart button {
+    padding: 10px 15px;
+}
+
+.meta-info p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.meta-info strong {
+    color: #222;
+}
+
+.description-btn {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: end;
+    margin: 0px 50px;
+}
+
+.description-btn button {
+    padding: 10px 30px;
+    border: 1px solid #000;
+    border-radius: 0px;
+}
+
+.description1 {
+    width: 90%;
+    display: flex;
+    padding: 20px 20px;
+    align-items: center;
+    margin: 10px 50px;
+    border: 1px solid #000;
+}
+
+.description1 p {
+    font-size: 14px;
+}
+
+.add-to-cart a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .breadcrumb {
+        padding: 0px 20px;
+    }
+
+    .breadcrumb a {
+        font-size: 12px;
+    }
+
+    span {
+        font-size: 12px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .product-images {
+        flex-direction: column-reverse;
+    }
+
+    .thumbnails {
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    .thumbnails img {
+        width: 50px;
+    }
+
+    .main-image img {
+        margin-left: 0;
+    }
+
+    .add-to-cart {
+        width: 100%;
+    }
+
+    .meta-info p {
+        padding-bottom: 10px;
+    }
+
+    .description-btn {
+        gap: 1px;
+        margin: 0px 5px;
+    }
+
+    .description1 {
+        margin: 5px 5px;
+        width: 85%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .add-to-cart {
+        font-size: 0.9rem;
+    }
+}
